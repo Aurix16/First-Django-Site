@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+	<head>
+		<title>Django Girls	blog</title>
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	 -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+		<link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'
+		>
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+	<nav class="theNav navbar navbar-light bg-light">
+		<div class="icons">
+			<a class="navbar-brand fa fa-facebook" href="#"></a>
+			<a class="navbar-brand fa fa-twitter" href="#"></a>
+			<a class="navbar-brand fa fa-google" href="#"></a>
+			<a class="navbar-brand fa fa-instagram" href="#"></a>
+		</div>
+  		<a class="theBrand navbar-brand" href="#"><span>A</span>urora <span>C</span>herie</a>
+	</nav>
+	<div class="page-header">
+		
+	</div>
+	<div class="slider">
+		<p class="blog">Blog</p>
+	</div>
+	<p class="posts">
+		<b>Recent Posts</b> 
+		<hr/>
+	</p>
+	<div class="content	container">
+		<div class="row">
+			<div class="col-md-12">
+				{% block content %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
